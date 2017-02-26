@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Game</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
 
-  <h1>Great <span id="colorDisplay">RGB</span> Color Game</h1>
+  <h1>Great <br><span id="colorDisplay">RGB</span><br> Color Game</h1>
 
   <div id="stripe">
-    <button type="button" id="reset">New colors</button>
-    <span id="message"></span>
+    <div class="container">
+      <button type="button" id="reset">New colors</button>
+      <span id="message"></span>
+      <button class="mode">Easy</button>
+      <button class="mode selected">Hard</button>
+    </div>
   </div>
 
-  <div id="container">
+  <div class="container">
     <div class="square"></div>
     <div class="square"></div>
     <div class="square"></div>
