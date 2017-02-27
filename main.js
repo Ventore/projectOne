@@ -55,6 +55,7 @@ function reset() {
   resetButton.textContent = "New Colors";
   messageDisplay.textContent = "";
   h1.style.background = "#4178aa";
+  metaThema.content = "rgb(65, 120, 170)";
   colorDisplay.textContent = pickedColor;
   for(var i = 0; i < squares.length; i++) {
     if (colors[i]) {
