@@ -8,6 +8,7 @@ var messageDisplay = document.getElementById("message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode")
+var metaThema = document.getElementsByTagName('meta')[2];
 
 init();
 
@@ -87,6 +88,7 @@ function gameLogic() {
         changeColors(clickedColor);
         resetButton.textContent = "Play again?"
         h1.style.background = clickedColor;
+        metaThema.content = clickedColor;
       } else {
         this.style.background = "#232323";
         messageDisplay.textContent = "Try Again"
